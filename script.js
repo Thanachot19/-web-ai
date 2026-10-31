@@ -450,7 +450,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const tr = document.createElement('tr');
       tr.innerHTML = `
-        <td style="color: #cbd5e1; font-weight: 600;">${model.name}</td>
+        <td class="sim-model-name" style="font-weight: 600;">${model.name}</td>
         <td class="val-col" style="color: ${model.tier === 'fast' ? 'var(--accent-emerald)' : model.tier === 'flagship' ? 'var(--accent-rose)' : 'var(--accent-blue)'}">
           $${costUSD < 0.01 ? costUSD.toFixed(4) : costUSD.toFixed(2)}
           <span style="font-size: 0.75rem; color: var(--text-dim); display: block;">≈ ฿${costTHB < 1 ? costTHB.toFixed(2) : Math.round(costTHB).toLocaleString()}</span>
