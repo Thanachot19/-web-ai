@@ -35,13 +35,19 @@
            Slide 1: Title Slide (Hero)
            =================================================================== -->
       <section class="slide slide-hero active" id="slide-1" data-notes="ยินดีต้อนรับทุกท่านครับ วันนี้เราจะมาเจาะลึกการเลือกใช้โมเดล AI ในการทำงานจริง ผ่านหลักการสถาปัตยกรรมโมเดลภาษาและเกณฑ์ประเมิน 8 มิติ พร้อมหาคำตอบที่คุ้มค่าและปลอดภัยที่สุดให้กับ 4 สถานการณ์จริงยอดฮิต ได้แก่ การสรุปอีเมล 2,000 ฉบับ, การวิเคราะห์โค้ด 500 บรรทัด, การตอบแชทลูกค้าภาษาไทย และการจัดการข้อมูลลูกค้าลับครับ">
-        <div class="hero-pill-badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          21909-2009 การใช้งานแอปพลิเคชันปัญญาประดิษฐ์ • บทที่ 3
+        <div class="hero-ambient-glow" aria-hidden="true"></div>
+        
+        <div class="hero-badge-wrap">
+          <div class="hero-pill-badge">
+            <span class="live-pulse-dot" aria-hidden="true"></span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>21909-2009 การใช้งานแอปพลิเคชันปัญญาประดิษฐ์ • บทที่ 3</span>
+          </div>
+          <span class="hero-live-tag">INTERACTIVE PRESENTATION</span>
         </div>
         
         <h1 class="hero-title">
-          การเลือกใช้ <span class="gradient-text">AI โมเดล</span> ในการทำงานจริง
+          การเลือกใช้ <span class="gradient-text hero-title-gradient">AI โมเดล</span> ในการทำงานจริง
         </h1>
         
         <p class="hero-subtitle">
@@ -49,32 +55,106 @@
         </p>
 
         <div class="hero-scenarios-strip">
-          <button class="hero-scenario-chip" data-target-slide="11" title="คลิกเพื่อไปที่สไลด์: สรุปอีเมล 2,000 ฉบับ" aria-label="ไปที่สรุปอีเมล 2,000 ฉบับ">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>สรุปอีเมล 2,000 ฉบับ</span>
-            <svg class="chip-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          <!-- Scenario 1 -->
+          <button class="hero-scenario-chip chip-email" data-target-slide="11" title="คลิกเพื่อไปที่สไลด์: สรุปอีเมล 2,000 ฉบับ" aria-label="ไปที่สรุปอีเมล 2,000 ฉบับ">
+            <div class="chip-glow-overlay" aria-hidden="true"></div>
+            <div class="chip-header">
+              <span class="chip-case-tag">CASE 01</span>
+              <span class="chip-subtag">High Volume</span>
+            </div>
+            <div class="chip-main">
+              <div class="chip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="chip-text-wrap">
+                <span class="chip-title">สรุปอีเมล 2,000 ฉบับ</span>
+                <span class="chip-desc">ประหยัด 66x ด้วย Fast Tier</span>
+              </div>
+            </div>
+            <div class="chip-footer">
+              <span>เจาะลึกโจทย์นี้</span>
+              <svg class="chip-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
           </button>
-          <button class="hero-scenario-chip" data-target-slide="12" title="คลิกเพื่อไปที่สไลด์: วิเคราะห์โค้ด 500 บรรทัด" aria-label="ไปที่วิเคราะห์โค้ด 500 บรรทัด">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            <span>วิเคราะห์โค้ด 500 บรรทัด</span>
-            <svg class="chip-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <!-- Scenario 2 -->
+          <button class="hero-scenario-chip chip-code" data-target-slide="12" title="คลิกเพื่อไปที่สไลด์: วิเคราะห์โค้ด 500 บรรทัด" aria-label="ไปที่วิเคราะห์โค้ด 500 บรรทัด">
+            <div class="chip-glow-overlay" aria-hidden="true"></div>
+            <div class="chip-header">
+              <span class="chip-case-tag">CASE 02</span>
+              <span class="chip-subtag">High Precision</span>
+            </div>
+            <div class="chip-main">
+              <div class="chip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div class="chip-text-wrap">
+                <span class="chip-title">วิเคราะห์โค้ด 500 บรรทัด</span>
+                <span class="chip-desc">แม่นยำสูงสุดด้วย Reasoning</span>
+              </div>
+            </div>
+            <div class="chip-footer">
+              <span>เจาะลึกโจทย์นี้</span>
+              <svg class="chip-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
           </button>
-          <button class="hero-scenario-chip" data-target-slide="13" title="คลิกเพื่อไปที่สไลด์: ตอบแชทลูกค้าภาษาไทย" aria-label="ไปที่ตอบแชทลูกค้าภาษาไทย">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            <span>ตอบแชทลูกค้าภาษาไทย</span>
-            <svg class="chip-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <!-- Scenario 3 -->
+          <button class="hero-scenario-chip chip-thai" data-target-slide="13" title="คลิกเพื่อไปที่สไลด์: ตอบแชทลูกค้าภาษาไทย" aria-label="ไปที่ตอบแชทลูกค้าภาษาไทย">
+            <div class="chip-glow-overlay" aria-hidden="true"></div>
+            <div class="chip-header">
+              <span class="chip-case-tag">CASE 03</span>
+              <span class="chip-subtag">Low Latency</span>
+            </div>
+            <div class="chip-main">
+              <div class="chip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div class="chip-text-wrap">
+                <span class="chip-title">ตอบแชทลูกค้าภาษาไทย</span>
+                <span class="chip-desc">เข้าใจบริบทไทย & TTFT เร็ว</span>
+              </div>
+            </div>
+            <div class="chip-footer">
+              <span>เจาะลึกโจทย์นี้</span>
+              <svg class="chip-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
           </button>
-          <button class="hero-scenario-chip" data-target-slide="14" title="คลิกเพื่อไปที่สไลด์: ข้อมูลลูกค้าลับ & PDPA" aria-label="ไปที่ข้อมูลลูกค้าลับ & PDPA">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            <span>ข้อมูลลูกค้าลับ & PDPA</span>
-            <svg class="chip-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <!-- Scenario 4 -->
+          <button class="hero-scenario-chip chip-secret" data-target-slide="14" title="คลิกเพื่อไปที่สไลด์: ข้อมูลลูกค้าลับ & PDPA" aria-label="ไปที่ข้อมูลลูกค้าลับ & PDPA">
+            <div class="chip-glow-overlay" aria-hidden="true"></div>
+            <div class="chip-header">
+              <span class="chip-case-tag">CASE 04</span>
+              <span class="chip-subtag">Compliance 100%</span>
+            </div>
+            <div class="chip-main">
+              <div class="chip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <div class="chip-text-wrap">
+                <span class="chip-title">ข้อมูลลูกค้าลับ & PDPA</span>
+                <span class="chip-desc">Air-gapped On-Premise LLM</span>
+              </div>
+            </div>
+            <div class="chip-footer">
+              <span>เจาะลึกโจทย์นี้</span>
+              <svg class="chip-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
           </button>
         </div>
 
         <div class="hero-meta">
-          <span>สไลด์นำเสนอ Interactive สำหรับห้องเรียนและการประชุม</span>
-          <span>•</span>
-          <span>กดลูกศร <kbd>→</kbd> หรือ <kbd>Space</kbd> เพื่อเริ่ม</span>
+          <div class="hero-meta-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span>หลักสูตรปฏิบัติการคัดเลือก AI สำหรับองค์กร</span>
+          </div>
+          <span class="hero-meta-divider">•</span>
+          <div class="hero-meta-item">
+            <span>กด</span>
+            <kbd>→</kbd> หรือ <kbd>Space</kbd>
+            <span>เพื่อเริ่มสไลด์</span>
+          </div>
         </div>
       </section>
 
